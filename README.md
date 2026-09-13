@@ -23,6 +23,14 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
 - **`interfaces/`** — Interfaces múltiples (una clase implementando varios contratos a la vez).
     - `Volador`, `Nadador` → `Pato` (implementa ambas)
 
+- **`excepciones/`** — Manejo de errores en tiempo de ejecución.
+    - `Main` — `try/catch` básico con `ArrayIndexOutOfBoundsException`.
+    - `MainFinally` — bloque `finally`, se ejecuta siempre haya error o no.
+    - `Rana`, `MainThrow` — `throw` con excepción genérica de Java.
+    - `MainChecked` — checked exception (`FileNotFoundException`).
+    - `EdadInvalidaException`, `MainPersonalizada` — excepción personalizada,
+      heredando de `RuntimeException`.
+
 ## Cómo ejecutar
 
 1. Abrir el proyecto en IntelliJ IDEA (o cualquier IDE compatible con Java).
@@ -38,7 +46,7 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
 - [x] Abstracción (abstract class)
 - [x] Abstracción (interface)
 - [x] Interfaces múltiples
-- [ ] Excepciones
+- [x] Excepciones (try/catch, finally, throw, checked/unchecked, personalizadas)
 - [ ] Colecciones (ArrayList, HashMap, etc.)
 - [ ] Generics
 - [ ] Streams y expresiones lambda

@@ -23,8 +23,6 @@ public class Persona {
         System.out.println("Feliz cumpleanos numero " + edad);
     }
 
-
-
     public static void main(String[] args){
         Persona persona1 = new Persona("Kiwi", 67, "KiwiLand");
         Persona persona2 = new Persona("Pepe", 34, "RacconCity");
