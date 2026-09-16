@@ -31,6 +31,13 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
     - `EdadInvalidaException`, `MainPersonalizada` — excepción personalizada,
       heredando de `RuntimeException`.
 
+- **`colecciones/`** — Estructuras de datos dinámicas de la librería estándar.
+    - `MainArrayList`, `Producto`, `MainInventario` — `ArrayList`: listas dinámicas,
+      mantienen orden de inserción, permiten duplicados.
+    - `MainHashMap` — `HashMap`: pares clave-valor, sin orden garantizado,
+      claves únicas.
+    - `MainHashSet` — `HashSet`: valores únicos, sin duplicados, sin orden garantizado.
+
 ## Cómo ejecutar
 
 1. Abrir el proyecto en IntelliJ IDEA (o cualquier IDE compatible con Java).
@@ -47,6 +54,6 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
 - [x] Abstracción (interface)
 - [x] Interfaces múltiples
 - [x] Excepciones (try/catch, finally, throw, checked/unchecked, personalizadas)
-- [ ] Colecciones (ArrayList, HashMap, etc.)
+- [x] Colecciones (ArrayList, HashMap, HashSet)
 - [ ] Generics
 - [ ] Streams y expresiones lambda
