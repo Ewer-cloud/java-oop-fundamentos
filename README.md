@@ -37,6 +37,10 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
     - `MainHashMap` — `HashMap`: pares clave-valor, sin orden garantizado,
       claves únicas.
     - `MainHashSet` — `HashSet`: valores únicos, sin duplicados, sin orden garantizado.
+    - `Libro`, `MainEqualsHashCode` — `equals()`/`hashCode()`: por qué `==` y el
+      `equals()` heredado de `Object` comparan memoria, no contenido; cómo
+      sobrescribirlos para que un `HashSet` reconozca objetos con los mismos
+      datos como iguales.
 
 ## Cómo ejecutar
 
@@ -55,5 +59,6 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
 - [x] Interfaces múltiples
 - [x] Excepciones (try/catch, finally, throw, checked/unchecked, personalizadas)
 - [x] Colecciones (ArrayList, HashMap, HashSet)
+- [x] equals() y hashCode()
 - [ ] Generics
 - [ ] Streams y expresiones lambda
