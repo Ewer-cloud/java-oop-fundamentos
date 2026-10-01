@@ -42,6 +42,24 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
       sobrescribirlos para que un `HashSet` reconozca objetos con los mismos
       datos como iguales.
 
+- **`patrones/`** — Patrones de diseño aplicados con ejemplos propios.
+    - `singleton/` — garantiza una única instancia de una clase en todo el
+      programa, con constructor privado y un método estático de acceso.
+        - `Configuracion` — ejemplo guiado (idioma de una app).
+        - `ContadorVisitas` — ejercicio propio (contador compartido).
+    - `factory/` — centraliza la creación de objetos relacionados en un solo
+      método, para no repetir la lógica de decisión en todo el código.
+        - `Animal` (abstracta), `Perro`, `Gato` — jerarquía de ejemplo.
+        - `AnimalFactory` — decide qué clase instanciar según un texto.
+    - `observer/` — un sujeto avisa automáticamente a una lista de
+      observadores cuando ocurre algo, sin llamarlos uno por uno.
+        - `Observador` (interfaz), `Sujeto`, `Suscriptor`.
+    - `decorator/` — agrega comportamiento a un objeto envolviéndolo en
+      capas, sin modificar su clase original ni usar una subclase por
+      cada combinación posible.
+        - `Cafe` (interfaz), `CafeSimple`, `CafeDecorador` (abstracta),
+          `ConLeche`, `ConChocolate`.
+
 ## Cómo ejecutar
 
 1. Abrir el proyecto en IntelliJ IDEA (o cualquier IDE compatible con Java).
@@ -60,5 +78,6 @@ Cada paquete dentro de `src/` corresponde a un tema trabajado:
 - [x] Excepciones (try/catch, finally, throw, checked/unchecked, personalizadas)
 - [x] Colecciones (ArrayList, HashMap, HashSet)
 - [x] equals() y hashCode()
+- [x] Patrones de diseño (Singleton, Factory, Observer, Decorator)
 - [ ] Generics
 - [ ] Streams y expresiones lambda
